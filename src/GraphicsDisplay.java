@@ -41,6 +41,7 @@ public class GraphicsDisplay extends JPanel {
     private double[] originalPoint = new double[2];
     private java.awt.geom.Rectangle2D.Double selectionRect = new java.awt.geom.Rectangle2D.Double();
 
+
     public GraphicsDisplay() {
         this.setBackground(Color.WHITE);
         this.axisStroke = new BasicStroke(2.0F, 0, 0, 10.0F, (float[])null, 0.0F);
@@ -303,6 +304,7 @@ public class GraphicsDisplay extends JPanel {
     }
 
     public void reset() {
+
         this.displayGraphics(this.originalData);
     }
 
